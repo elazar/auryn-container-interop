@@ -1,0 +1,41 @@
+{
+    "name": "elazar/auryn-container-interop",
+    "description": "container-interop compatibility for Auryn",
+    "license": "MIT",
+	"support": {
+        "email": "me@matthewturland.com",
+        "issues": "https://github.com/elazar/auryn-container-interop/issues",
+        "source": "https://github.com/elazar/auryn-container-interop"
+    },
+    "authors": [
+        {
+            "name": "Matthew Turland",
+            "homepage": "http://matthewturland.com"
+        }
+    ],
+    "keywords": [
+        "dependency injection",
+        "container-interop",
+        "Auryn"
+    ],
+    "require": {
+        "container-interop/container-interop": "^1.1",
+        "rdlowrey/auryn": "^1.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elazar\\Auryn\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Elazar\\Auryn\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "php vendor/bin/phpunit"
+    }
+}
