@@ -65,7 +65,7 @@ themselves instantiable classes).
 Because of this, `ContainerInterface->has()` in this container-interop
 implementation will return `true` if either the underlying `Auryn\Injector`
 instance has definitions for a requested class or interface or if a requested
-class is defined and considered instantiable (i.e. not `abstract` and having a
+class is defined and considered instantiable (i.e. is not `abstract` and has a
 `public` implementation of `__construct()`). While some may view this as
 technically incorrect, it seems consistent to me with the overall spirit and
 intentions of the *container-interop* standard.
