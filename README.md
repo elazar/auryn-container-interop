@@ -1,5 +1,7 @@
 # auryn-container-interop
 
+[![Build Status](https://travis-ci.org/elazar/auryn-container-interop.svg?branch=master)](https://travis-ci.org/elazar/auryn-container-interop)
+
 [container-interop](https://github.com/container-interop/container-interop) compatibility for [Auryn](https://github.com/rdlowrey/Auryn)
 
 ## License
