@@ -43,10 +43,11 @@ As recommended by its author, avoid using it as a [service locator](https://en.w
 
 ## Implementation
 
-While I agree with a lot of the discussion in rdlowrey/auryn#77 regarding why
-new projects can use Auryn directly without a container-interop implementation,
-I do think that such an implementation can be useful for integrating Auryn with
-third-party libraries that use container-interop, such as [zend-expressive](https://github.com/zendframework/zend-expressive).
+While I agree with a lot of the discussion in [this issue](https://github.com/rdlowrey/Auryn/issues/77)
+regarding why new projects can use Auryn directly without a container-interop
+implementation, I do think that such an implementation can be useful for
+integrating Auryn with third-party libraries that use container-interop, such
+as [zend-expressive](https://github.com/zendframework/zend-expressive).
 
 The implementation in this repository takes a small amount of liberty with this
 passage from [Section 1.1](https://github.com/container-interop/container-interop/blob/master/docs/ContainerInterface.md#11-basics)
