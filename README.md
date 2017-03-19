@@ -20,19 +20,15 @@ composer require elazar/auryn-container-interop
 
 ```php
 use Elazar\Auryn\Container;
-use Acme\DelegateContainer;
 use Acme\SomeDependency;
 
 $container = new Container;
 
-$delegate = new DelegateContainer;
-$container->addDelegate($delegate);
-
-$instance = $container->get(SomeDependency::class);
-
 if ($container->has(SomeDependency::class)) {
     // ...
 }
+
+$instance = $container->get(SomeDependency::class);
 
 // All public methods of Auryn\Injector are available
 $instance = $container->make(SomeDependency::class);
