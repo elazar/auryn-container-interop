@@ -5,7 +5,7 @@ namespace Elazar\Auryn;
 use Auryn\Injector;
 use Elazar\Auryn\Exception\ContainerException;
 use Elazar\Auryn\Exception\NotFoundException;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 class Container extends Injector implements ContainerInterface
 {

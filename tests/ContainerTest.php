@@ -4,7 +4,7 @@ namespace Elazar\Auryn;
 
 use Elazar\Auryn\Exception\ContainerException;
 use Elazar\Auryn\Exception\NotFoundException;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 use PHPUnit_Framework_TestCase as TestCase;
 
 class ContainerTest extends TestCase

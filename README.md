@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/elazar/auryn-container-interop.svg?branch=master)](https://travis-ci.org/elazar/auryn-container-interop)
 
-[container-interop](https://github.com/container-interop/container-interop) compatibility for [Auryn](https://github.com/rdlowrey/Auryn)
+[PSR-11](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md) compatibility for [Auryn](https://github.com/rdlowrey/Auryn)
 
 ## License
 
