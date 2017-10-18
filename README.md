@@ -46,7 +46,7 @@ integrating Auryn with third-party libraries that use *container-interop*, such
 as [zend-expressive](https://github.com/zendframework/zend-expressive).
 
 The implementation in this repository takes a small amount of liberty with this
-passage from [Section 1.1](https://github.com/container-interop/container-interop/blob/master/docs/ContainerInterface.md#11-basics)
+passage from [Section 1.1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md#11-basics)
 of the *container-interop* specification:
 
 > `has` ... MUST return `true` if an entry identifier is known to the container
