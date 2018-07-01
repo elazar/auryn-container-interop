@@ -40,14 +40,14 @@ As recommended by its author, avoid using it as a [service locator](https://en.w
 ## Implementation
 
 While I agree with a lot of the discussion in [this issue](https://github.com/rdlowrey/Auryn/issues/77)
-regarding why new projects can use Auryn directly without a *container-interop*
+regarding why new projects can use Auryn directly without a *PSR-11*
 implementation, I do think that such an implementation can be useful for
-integrating Auryn with third-party libraries that use *container-interop*, such
+integrating Auryn with third-party libraries that use *PSR-11*, such
 as [zend-expressive](https://github.com/zendframework/zend-expressive).
 
 The implementation in this repository takes a small amount of liberty with this
-passage from [Section 1.1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md#11-basics)
-of the *container-interop* specification:
+passage from [Section 1.1.2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md#112-reading-from-a-container)
+of the *PSR-11* specification:
 
 > `has` ... MUST return `true` if an entry identifier is known to the container
 
@@ -58,13 +58,13 @@ instantiate a class even if it contains no definitions for that class (e.g.
 if the class has no required constructor parameters or if those parameters are
 themselves instantiable classes).
 
-Because of this, `ContainerInterface->has()` in this *container-interop*
+Because of this, `ContainerInterface->has()` in this *PSR-11*
 implementation will return `true` if either the underlying `Auryn\Injector`
 instance has definitions for a requested class or interface or if a requested
 class is defined and considered instantiable (i.e. is not `abstract` and has a
 `public` implementation of `__construct()`). While some may view this as
 technically incorrect, it seems consistent to me with the overall spirit and
-intentions of the *container-interop* standard.
+intentions of the *PSR-11* standard.
 
 ## Development
 
